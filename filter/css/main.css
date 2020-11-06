@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.orange {
+  background-color: orange;
+}
+.green {
+  background-color: green;
+}
+.gray {
+  background-color: gray;
+}
+
+.container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+button {
+  margin: 10px;
+}

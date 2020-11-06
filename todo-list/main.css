@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  height: 100vh;
+}
+
+.container h1 {
+  margin: 30px auto;
+  width: 200px;
+}
+
+.container #task-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container #task-form #task-name {
+  width: 500px;
+  padding: 8px 20px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.container #task-form #submit-task {
+  outline: 0;
+  border: 0;
+  padding: 11px 30px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.list-container {
+  width: 100%;
+  height: 400px;
+}
+
+.list-container .task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.list-container .task .buttons .add-item-trigger {
+  outline: 0;
+  border: 0;
+  width: 50px;
+  height: 40px;
+  background: rgb(26, 97, 26);
+  cursor: pointer;
+}
+
+.list-container .task .buttons .add-item-trigger i {
+  font-size: 24px;
+  color: white;
+}
+
+.list-container .task .buttons .remove-item-trigger {
+  outline: 0;
+  border: 0;
+  width: 50px;
+  height: 40px;
+  background: rgb(177, 12, 12);
+  cursor: pointer;
+}
+
+.list-container .task .buttons .remove-item-trigger i {
+  font-size: 24px;
+  color: white;
+}
+
+.concluded {
+  opacity: 0.3;
+}

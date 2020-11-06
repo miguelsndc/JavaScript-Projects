@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .container .btn-bg-trigger {
+        border: 0;
+        outline: 0;
+        padding: 20px 30px;
+        width: 200px;
+        border-radius: 15px;
+        background-color: #763a7c;
+        color: white;
+        font-size: 20px;
+      }
+
+      body {
+        transition: background 0.2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button type="button" class="btn-bg-trigger">Click Me</button>
+    </div>
+
+    <script>
+      const body = document.body;
+      const btnBgChanger = document.querySelector(".btn-bg-trigger");
+      const colors = ["red", "blue", "green", "aqua", "purple"];
+
+      const bgChanger = () => {
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        body.style.backgroundColor = randomColor;
+      };
+
+      btnBgChanger.addEventListener("click", bgChanger);
+    </script>
+  </body>
+</html>

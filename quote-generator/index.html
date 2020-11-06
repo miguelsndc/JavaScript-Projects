@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Generator</title>
+  <script src="app.js" defer ></script>
+
+  <style>
+    .container {
+      width: 400px;
+      margin: 100px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    .container #quote-generator {
+      padding: 10px 20px;
+      width: 200px;
+      border: 2px solid rgb(87, 87, 87);
+      background-color: rgb(54, 54, 54);
+      border-radius: 15px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <button id="quote-generator">Generate Quote</button>
+    <p class="quote-container"></p>
+    <span class="quote-author"></span>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  margin-top: 30px;
+}
+
+#container h1 {
+  padding: 30px;
+  font-size: 36px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#container #grocery-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#container #grocery-form input[type="text"] {
+  outline: none;
+  width: 500px;
+  padding: 5px 5px 5px 5px;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid rgb(19, 60, 94);
+}
+
+#container #grocery-form input[type="submit"] {
+  outline: 0;
+  border: 0;
+  width: 100px;
+  padding: 10px 5px;
+  margin: 20px auto;
+  cursor: pointer;
+  background: rgb(19, 60, 94);
+  color: white;
+  border-radius: 5px;
+}
+
+#container #grocery-list .grocery {
+  display: flex;
+  align-items: center;
+  border: 3px solid rgba(12, 50, 99, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+
+#container #grocery-list .grocery .price {
+  padding: 10px;
+}
+
+#container #grocery-list .grocery #delete-grocery-btn {
+  margin-left: auto;
+  outline: 0;
+  border: 0;
+  background-color: none;
+  color: rgb(168, 10, 10);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#container #grocery-list .grocery #delete-grocery-btn :hover {
+  color: rgb(114, 5, 5);
+}

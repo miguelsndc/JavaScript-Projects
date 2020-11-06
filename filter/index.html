@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter Project</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/app.js" defer ></script>
+</head>
+<body>
+
+  <form id="filterForm" onsubmit="return false">
+    <input type="text" id="filterTerm">
+    <input type="submit" value="Submit" id="submitFilterInput">
+  </form>
+  <button data-filter="orange">ORANGE</button>
+  <button data-filter="green">GREEN</button>
+  <button data-filter="gray">GRAY  </button>
+
+  <div class="container">
+    <div class="box orange" data-name="orange"></div>
+    <div class="box orange" data-name="orange"></div>
+    <div class="box orange" data-name="orange"></div>
+    <div class="box green" data-name="green"></div>
+    <div class="box green" data-name="green"></div>
+    <div class="box green" data-name="green"></div>
+    <div class="box gray" data-name="gray"></div>
+    <div class="box gray" data-name="gray"></div>
+    <div class="box gray" data-name="gray"></div>
+  </div>
+
+</body>
+</html>
