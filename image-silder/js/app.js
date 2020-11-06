@@ -1,14 +1,14 @@
 const nextImgButton = document.getElementById('nextImgButton');
 const prevImgButton = document.getElementById('prevImgButton');
 const imageContainer = document.getElementById('img-container');
+let counter = 0;
 
 const images = [
-  'iphone',
-  'samsung',
-  'xiaomi'
+  'cam1',
+  'cam2',
+  'cam3',
 ]
 
-let counter = 0;
 imageContainer.style.background = `url(./images/${images[counter]}.jpg) center no-repeat `;
 
 const checkCounter = counter => {
@@ -25,18 +25,23 @@ const checkCounter = counter => {
   }
 }
 
-const slideToPrevImg = () => {
-  counter--;
+const slideImages = (param) => {
+  if (param === "next") {
+    counter++
+  } else {
+    counter--
+  }
   counter = checkCounter(counter);
   console.log(counter);
   imageContainer.style.background = `url(./images/${images[counter]}.jpg) center no-repeat `;
 }
 
+const slideToPrevImg = () => {
+  slideImages("prev")
+}
+
 const slideToNextImg = () => {
-  counter++;;
-  counter = checkCounter(counter);
-  console.log(counter);
-  imageContainer.style.background = `url(./images/${images[counter]}.jpg) center no-repeat `;
+  slideImages('next')
 }
 
 prevImgButton.addEventListener('click', slideToPrevImg);
