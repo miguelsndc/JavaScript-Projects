@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/ed700c32d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js" defer></script>
+    <title>Grocery List</title>
+  </head>
+  <body>
+    <main>
+      <section id="add-item-section">
+        <h1 class="title">Add Grocery Item</h1>
+        <form id="grocery-form" onsubmit="return false">
+          <input type="text" id="grocery-input" name="grocery-name" placeholder="New item here..."/>
+          <input type="submit" value="Add">
+        </form>
+      </section>
+      <section id="grocery-list-wrapper">
+        <h1 class="title">Grocery List</h1>
+        <ul class="grocery-list">
+          <li class="grocery-item">
+            <h4 class="name">Grocery Name</h3>
+            <button class="remove-item"><i class="fas fa-trash"></i></button>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
